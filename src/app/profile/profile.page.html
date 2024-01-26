@@ -1,0 +1,275 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="getProfilePicture()">
+        <ion-icon name="refresh-outline"></ion-icon>     
+      </ion-button>
+    </ion-buttons>
+    <ion-title>&nbsp;</ion-title>
+    <ion-buttons slot="end" color="dark">
+      <ion-button (click)="getProfilePicture()">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>       
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  fullscreen="true" slot="fixed">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+     
+        <div *ngFor="let user of user">
+
+          <div *ngIf="user.id==id.uid">
+            <img *ngIf="!user.profileP" src="../../assets/user.png" alt="" (click)="selectMedia()">
+          </div>
+
+        </div>
+        <div *ngFor="let user of user">
+            <div *ngIf="user.uid==id.uid">
+              <img *ngIf="user.profileP==false" src="../../assets/user.png" alt="" (click)="selectMedia()">
+              <div *ngIf="user.profileP==true">
+                <div *ngFor="let f of Files">
+                  <div *ngIf="f.name==id.uid">
+                    <img [(src)]="f.url" alt="" (click)="selectMedia()">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <div *ngIf="show" class="card-body">
+    <div style="position: relative;top: 30px;"> 
+   <ion-item style="border-radius: 10px;" *ngFor="let f of files">
+    <ion-button slot="start" color="tertiary" (click)="deleteFile(f)"><ion-icon name="close-outline"></ion-icon></ion-button>
+    <p style="text-align: center;font-size: 16px;margin: 0px;">{{ f.fullPath }}</p>
+
+    <ion-button slot="end" (click)="uploadFile(f,true,user.id)"><ion-icon name="checkmark-outline"></ion-icon></ion-button>
+
+   </ion-item>
+      
+
+    </div>
+    <ion-segment color="primary" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable>
+      <ion-segment-button value="deposit" checked>
+        <ion-label>Progress</ion-label>
+        <ion-icon name="trophy-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="loan">
+        <ion-label>You</ion-label>
+        <ion-icon name="person-outline"></ion-icon>      
+      </ion-segment-button>
+    </ion-segment>
+
+    <div [ngSwitch]="type">
+      <div *ngSwitchCase="'deposit'">
+        <h1>Progress Tree</h1>
+        <img style="width: 10px;position: relative;bottom: 200px;left: 200px;"src="https://i.pinimg.com/originals/b4/af/bb/b4afbb832cf50f227143e4cdebd50376.png" alt="">
+        <img style="width: 15px;position: relative;bottom: 100px;left: 100px;"src="https://i.pinimg.com/originals/b4/af/bb/b4afbb832cf50f227143e4cdebd50376.png" alt="">
+
+        <img style="position: relative;top: 40px;width: 300px;" src="https://clipartart.com/images/boy-climbing-tree-clipart-17.png" alt="">
+        <p>Physical Development</p> 
+        <div class="container"> 
+            <div class="skill pd">80%</div> 
+        </div> 
+      
+        <p>Cognitive Development</p> 
+        <div class="container"> 
+            <div class="skill cd">60%</div> 
+        </div> 
+        <p>Language Development</p> 
+        <div class="container"> 
+            <div class="skill ld">80%</div> 
+        </div> 
+      
+        <p>Socio & emotional Development</p> 
+        <div class="container"> 
+            <div class="skill sed">60%</div> 
+        </div> 
+
+
+        
+      </div>
+  
+      <div *ngSwitchCase="'loan'">
+        <div *ngFor="let user of user">
+          <div *ngIf="user">
+            <div *ngIf="id.uid==user.uid">
+          <div class="user-meta ion-text-center">
+      
+      
+            <div *ngIf="!edit">
+            <h3  class="playername">{{user.name}} 
+              <ion-icon color="tertiary" name="pencil-outline" style="padding-left: 5px;" (click)="EditprofilePopover()"></ion-icon>
+      
+             </h3>
+             <h5 class="country">
+              {{user.role}}
+      
+            </h5>
+      
+       
+            <h6 class="ranking">age: <ion-chip>
+              <ion-label style="color:white;">{{user.age}}</ion-label>
+              </ion-chip>
+            </h6>
+      
+            </div>
+            <div *ngIf="edit">
+            <div class="playername">
+             <ion-input [value]="user.username" [(ngModel)]="newusername"><ion-icon color="tertiary" name="close-outline" style="padding-left: 5px;" (click)="EditprofilePopover()"></ion-icon>
+             </ion-input>
+            </div>
+            <div class="country">
+              <ion-input [value]="user.fname" [(ngModel)]="firstname"><ion-icon color="tertiary" name="pencil-outline" style="padding-left: 5px;"></ion-icon>
+              </ion-input>
+              <ion-input [value]="user.lname" [(ngModel)]="lastname"><ion-icon color="tertiary" name="pencil-outline" style="padding-left: 5px;"></ion-icon>
+              </ion-input>
+      
+            </div>
+      
+            <div class="ranking">age: <ion-chip>
+              <ion-input [value]="user.age" [(ngModel)]="newage" style="color:white;"><ion-icon color="tertiary" name="pencil-outline" style="padding-left: 5px;"></ion-icon>
+              </ion-input>
+      
+            </ion-chip>
+      
+            <div class="playername">
+              <ion-button color="tertiary" (click)="postuserinfo(newusername,firstname,lastname,newage,this.user.key)">
+                <ion-icon name="navigate-outline"></ion-icon>
+                </ion-button>
+            </div>
+           
+      
+            </div>
+      
+           </div>
+           
+        
+            
+          </div>
+          <ion-button style="text-transform: lowercase;"expand="full" color="primary">{{user.email}}</ion-button>
+          <ion-button  expand="full" color="danger">
+            {{user.phonenumber}}
+            <ion-chip *ngIf="!number" (click)="activeNumber()">
+              <ion-icon name="pencil-outline"></ion-icon>
+            </ion-chip>
+            <ion-chip *ngIf="number" (click)="activeNumber()">
+              <ion-icon name="close-outline"></ion-icon>
+            </ion-chip>
+      
+          </ion-button>
+          <div class="ranking" *ngIf="number"><ion-chip>
+            <ion-input [value]="user.phonenumber" [(ngModel)]="newnumber" style="color:white;"><ion-icon color="tertiary" name="pencil-outline" style="padding-left: 5px;"></ion-icon>
+            </ion-input>
+          </ion-chip>
+      
+            <ion-button class="round" style="float:right;" color="secondary" (click)="postNumber(newnumber,this.user.key)" fill="clear" shape="round" size="small"><ion-icon name="send-sharp"></ion-icon></ion-button>
+      
+          </div>
+      
+          <ion-button  expand="full" color="secondary">City: {{user.city}}
+            <ion-chip *ngIf="!city" (click)="activeCity()">
+              <ion-icon name="pencil-outline"></ion-icon>
+            </ion-chip>
+            <ion-chip *ngIf="city" (click)="activeCity()">
+              <ion-icon name="close-outline"></ion-icon>
+            </ion-chip>
+          </ion-button>
+          <div class="ranking" *ngIf="city"><ion-chip>
+            <ion-input [value]="user.city" [(ngModel)]="newcity" style="color:white;"><ion-icon color="tertiary" name="pencil-outline" style="padding-left: 5px;"></ion-icon>
+            </ion-input>
+          </ion-chip>
+       
+            <ion-button class="round" style="float:right;" color="secondary" (click)="postCity(newcity,this.user.key)" fill="clear" shape="round" size="small"><ion-icon name="send-sharp"></ion-icon></ion-button>
+      
+          </div>
+          <p style="color: white;text-align: center;padding-top: 10px;">choices</p>
+      
+          <ion-button *ngIf="!user.unverified" expand="block" color="custom" (click)="choiceUnverified(true,this.user.key)">
+          <ion-icon name="checkmark-circle-outline" style="padding-right: 70px;"></ion-icon>
+          unverfied news
+          </ion-button>
+          <ion-button *ngIf="user.unverified" expand="block" color="tertiary" (click)="choiceUnverified(false,this.user.key)">
+          unverfied news
+          <ion-icon name="close-circle-outline" style="padding-left:70px;"></ion-icon>
+          </ion-button>
+      
+          <ion-button *ngIf="!user.infotainment"   expand="block" color="custom" (click)="choiceInfo(true,this.user.key)">
+          <ion-icon name="checkmark-circle-outline" style="padding-right: 87px;"></ion-icon>
+          infotainment
+          </ion-button>
+          <ion-button *ngIf="user.infotainment"   expand="block" color="tertiary" (click)="choiceInfo(false,this.user.key)">
+          infotainment
+          <ion-icon name="close-circle-outline" style="padding-left:87px;"></ion-icon>
+          </ion-button>
+      
+          <ion-button *ngIf="!user.sports"  expand="block" color="custom" (click)="choiceSport(true,this.user.key)">
+            <ion-icon name="checkmark-circle-outline" style="padding-right: 138px;"></ion-icon>
+            sports
+          </ion-button>
+          <ion-button *ngIf="user.sports" expand="block" color="tertiary" (click)="choiceSport(false,this.user.key)">
+          sports
+          <ion-icon name="close-circle-outline" style="padding-left:138px;"></ion-icon>
+          </ion-button>
+      
+          <ion-button *ngIf="!user.politics" expand="block" color="custom" (click)="choicePolitics(true,this.user.key)">
+            <ion-icon name="checkmark-circle-outline" style="padding-right: 127px;"></ion-icon>
+            politics
+          </ion-button>
+          <ion-button *ngIf="user.politics" expand="block" color="tertiary" (click)="choicePolitics(false,this.user.key)">
+          politics
+          <ion-icon name="close-circle-outline" style="padding-left:127px;"></ion-icon>
+          </ion-button>
+      
+        
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    
+
+ 
+</div>
+<div class="card-body" *ngIf="!show">
+  <div>
+  <div>
+    <div>
+  <div class="user-meta ion-text-center">
+    <h3 class="playername"><ion-skeleton-text animated></ion-skeleton-text></h3>
+    <h5 class="country"><ion-skeleton-text animated></ion-skeleton-text></h5>
+    <h6 class="ranking"> <ion-skeleton-text animated></ion-skeleton-text><ion-chip>
+      <ion-label style="color:white;"></ion-label>
+      </ion-chip>
+    </h6>
+  </div>
+  <ion-button expand="full" color="primary"><ion-skeleton-text animated></ion-skeleton-text></ion-button>
+  <ion-button  expand="full" color="danger"><ion-skeleton-text animated></ion-skeleton-text></ion-button>
+  <ion-button  expand="full" color="secondary"><ion-skeleton-text animated></ion-skeleton-text></ion-button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</ion-content>

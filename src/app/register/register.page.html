@@ -1,0 +1,68 @@
+<ion-content padding class="background">
+
+
+<div class="des">
+<h2>what are you??</h2>
+</div>
+<ion-card color="tertiary" (click)="presentModal(true,false,false)">
+  <img src="https://www.freepnglogos.com/uploads/student-png/student-png-algebra-nation-30.png" />
+  <ion-card-header>
+    <ion-card-title>Student</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   enter as student
+  </ion-card-content>
+</ion-card>
+
+<ion-card color="danger" (click)="presentModal(false,true,false)">
+  <img style="  width: 230px;
+  height: 183px;"src="https://pngimg.com/uploads/teacher/teacher_PNG32.png"/>
+  <ion-card-header>
+    <ion-card-title>Teacher</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   enter as Teacher
+  </ion-card-content>
+</ion-card>
+
+<ion-card color="primary" (click)="presentModal(false,false,true)">
+  <img style="  width: 230px;
+  height: 183px;"src="https://www.pngmart.com/files/3/Parents-PNG-Transparent-Image.png" />
+  <ion-card-header>
+    <ion-card-title>Parents</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   enter as Parents
+  </ion-card-content>
+</ion-card>
+
+  
+<div *ngIf="student && !teacher && !parents">
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="mail-outline"></ion-icon> Email </ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+   
+      <ion-item>
+      <ion-label position="floating"><ion-icon name="lock-closed-outline"></ion-icon> Password </ion-label>
+      <ion-input type="Password"  [(ngModel)]="password"></ion-input>
+    </ion-item>
+  
+   <ion-item>
+    <ion-label position="floating"><ion-icon name="lock-closed-outline"></ion-icon> Confirm Password </ion-label>
+    <ion-input type="Password"  [(ngModel)]="cpassword"></ion-input>
+  </ion-item>
+
+   <ion-button fills ="solid" color="light" expand="block" (click)="register()">Signup</ion-button>
+   <ion-button fill ="outline" color="light" expand="block" (click)="tologin()">login</ion-button>
+</div>
+
+</ion-content>
+
+
+
+
+

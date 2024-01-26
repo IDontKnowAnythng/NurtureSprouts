@@ -1,0 +1,1025 @@
+<ion-content padding class="background">
+  
+  
+
+
+      <div class="card-body">
+        <p style="margin-bottom: 8px;">Select age</p>
+        <h3 style="margin-bottom: 15px;margin-top: 0px;">
+          <ion-select [(ngModel)]="year" mode="ios" style="width: 142px;padding: 1px 1px 0px 0px;">
+            <ion-select-option value="toddler">2-3 years</ion-select-option>
+            <ion-select-option value="pre-schooler">3-4 years</ion-select-option>
+            <ion-select-option value="Kid">4-5 years</ion-select-option>
+            <ion-select-option value="elderKid">5-6 years</ion-select-option>
+  
+      
+          </ion-select>
+        </h3>
+     <div *ngIf="year=='toddler'">
+        <div>
+        <ion-label>
+          <p>1.Able to go up to the slide and climbing frame. </p>
+        </ion-label>
+    
+          <ion-range mode="ios" style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q1" snaps color="danger">
+          </ion-range><br>
+  
+      
+          <div class="detail">
+            <ion-chip>
+            <ion-label *ngIf="q1==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+            <ion-label *ngIf="q1==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+            <ion-label *ngIf="q1==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+            <ion-label *ngIf="q1==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+            <ion-label *ngIf="q1==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+  
+            </ion-chip>
+          </div>
+        </div>
+  
+        <div>
+          <ion-label>
+            <p>2. Able to ride a tricycle. </p>
+          </ion-label>
+      
+            <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q2" snaps color="danger">
+            </ion-range><br>
+    
+        
+            <div class="detail">
+              <ion-chip>
+                <ion-label *ngIf="q2==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                <ion-label *ngIf="q2==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                <ion-label *ngIf="q2==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                <ion-label *ngIf="q2==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                <ion-label *ngIf="q2==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+              </ion-chip>
+            </div>
+          </div>
+  
+          <div>
+            <ion-label>
+              <p>3. Able to kick a slowly moving ball.  </p>
+            </ion-label>
+        
+              <ion-range  mode="ios" style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q3" snaps color="danger">
+              </ion-range><br>
+      
+          
+              <div class="detail">
+                <ion-chip>
+                  <ion-label *ngIf="q3==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                  <ion-label *ngIf="q3==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                  <ion-label *ngIf="q3==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                  <ion-label *ngIf="q3==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                  <ion-label *ngIf="q3==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                </ion-chip>
+              </div>
+            </div>
+            <div>
+              <ion-label>
+                <p>4. Able to catch a big ball being thrown to them. </p>
+              </ion-label>
+          
+                <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q4" snaps color="danger">
+                </ion-range><br>
+        
+            
+                <div class="detail">
+                  <ion-chip>
+                    <ion-label *ngIf="q4==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                    <ion-label *ngIf="q4==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                    <ion-label *ngIf="q4==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                    <ion-label *ngIf="q4==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                    <ion-label *ngIf="q4==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                  </ion-chip>
+                </div>
+              </div>
+              <div>
+                <ion-label>
+                  <p>5. Able to walk upstairs with alternate foot.
+                  </p>
+                </ion-label>
+            
+                  <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q5" snaps color="danger">
+                  </ion-range><br>
+          
+              
+                  <div class="detail">
+                    <ion-chip>
+                      <ion-label *ngIf="q5==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                      <ion-label *ngIf="q5==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                      <ion-label *ngIf="q5==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                      <ion-label *ngIf="q5==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                      <ion-label *ngIf="q5==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                    </ion-chip>
+                  </div>
+                </div>
+                <div>
+                  <ion-label>
+                    <p>6. Able to walk along a line or on footprints. 
+                    </p>
+                  </ion-label>
+              
+                    <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q6" snaps color="danger">
+                    </ion-range><br>
+            
+                
+                    <div class="detail">
+                      <ion-chip>
+                        <ion-label *ngIf="q6==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                        <ion-label *ngIf="q6==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                        <ion-label *ngIf="q6==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                        <ion-label *ngIf="q6==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                        <ion-label *ngIf="q6==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                      </ion-chip>
+                    </div>
+                  </div>
+                  <div>
+                    <ion-label>
+                      <p>7. Able to cross legs when sitting.
+                      </p>
+                    </ion-label>
+                
+                      <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q7" snaps color="danger">
+                      </ion-range><br>
+              
+                  
+                      <div class="detail">
+                        <ion-chip>
+                          <ion-label *ngIf="q7==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                          <ion-label *ngIf="q7==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                          <ion-label *ngIf="q7==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                          <ion-label *ngIf="q7==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                          <ion-label *ngIf="q7==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                        </ion-chip>
+                      </div>
+                    </div>
+     
+                    
+                    <div>
+                      <ion-label>
+                        <p> 8. Able to hammer wooden blocks. 
+                        </p>
+                      </ion-label>
+                  
+                        <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q8" snaps color="danger">
+                        </ion-range><br>
+                
+                    
+                        <div class="detail">
+                          <ion-chip>
+                            <ion-label *ngIf="q8==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                            <ion-label *ngIf="q8==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                            <ion-label *ngIf="q8==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                            <ion-label *ngIf="q8==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                            <ion-label *ngIf="q8==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                          </ion-chip>
+                        </div>
+                      </div>
+                      <div>
+                        <ion-label>
+                          <p>9. Use scissors to cut paper strips.
+                          </p>
+                        </ion-label>
+                    
+                          <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q9" snaps color="danger">
+                          </ion-range><br>
+                  
+                      
+                          <div class="detail">
+                            <ion-chip>
+                              <ion-label *ngIf="q9==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                              <ion-label *ngIf="q9==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                              <ion-label *ngIf="q9==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                              <ion-label *ngIf="q9==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                              <ion-label *ngIf="q9==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                            </ion-chip>
+                          </div>
+                        </div>
+                   
+                          <div>
+                            <ion-label>
+                              <p>10. Use fingers to glue things.
+                              </p>
+                            </ion-label>
+                        
+                              <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q10" snaps color="danger">
+                              </ion-range><br>
+                      
+                          
+                              <div class="detail">
+                                <ion-chip>
+                                  <ion-label *ngIf="q10==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                  <ion-label *ngIf="q10==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                  <ion-label *ngIf="q10==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                  <ion-label *ngIf="q10==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                  <ion-label *ngIf="q10==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                </ion-chip>
+                              </div>
+                            </div>
+                            <div>
+                              <ion-label>
+                                <p>11. Able to build up a pillar of nine pieces of toy bricks.
+                              </ion-label>
+                          
+                                <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q11" snaps color="danger">
+                                </ion-range><br>
+                        
+                            
+                                <div class="detail">
+                                  <ion-chip>
+                                    <ion-label *ngIf="q11==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                    <ion-label *ngIf="q11==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                    <ion-label *ngIf="q11==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                    <ion-label *ngIf="q11==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                    <ion-label *ngIf="q11==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                  </ion-chip>
+                                </div>
+                              </div>
+                              <div>
+                                <ion-label>
+                                  <p>12. Use three pieces of wood to make a bridge. 
+                                  </p>
+                                </ion-label>
+                            
+                                  <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q12" snaps color="danger">
+                                  </ion-range><br>
+                          
+                              
+                                  <div class="detail">
+                                    <ion-chip>
+                                      <ion-label *ngIf="q12==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                      <ion-label *ngIf="q12==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                      <ion-label *ngIf="q12==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                      <ion-label *ngIf="q12==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                      <ion-label *ngIf="q12==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                    </ion-chip>
+                                  </div>
+                                </div>
+                                <div>
+                                  <ion-label>
+                                    <p>13. Begin to hold a pencil properly to do drawing. 
+                                    </p>
+                                  </ion-label>
+                              
+                                    <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q13" snaps color="danger">
+                                    </ion-range><br>
+                            
+                                
+                                    <div class="detail">
+                                      <ion-chip>
+                                        <ion-label *ngIf="q13==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                        <ion-label *ngIf="q13==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                        <ion-label *ngIf="q13==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                        <ion-label *ngIf="q13==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                        <ion-label *ngIf="q13==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                      </ion-chip>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <ion-label>
+                                      <p>14. Try to fill colour in a random manner. 
+                                      </p>
+                                    </ion-label>
+                                
+                                      <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q14" snaps color="danger">
+                                      </ion-range><br>
+                              
+                                  
+                                      <div class="detail">
+                                        <ion-chip>
+                                          <ion-label *ngIf="q14==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                          <ion-label *ngIf="q14==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                          <ion-label *ngIf="q14==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                          <ion-label *ngIf="q14==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                          <ion-label *ngIf="q14==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                        </ion-chip>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <ion-label>
+                                        <p>15. Able to draw a cross and inclined line by imitation.
+                                        </p>
+                                      </ion-label>
+                                  
+                                        <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q15" snaps color="danger">
+                                        </ion-range><br>
+                                
+                                    
+                                        <div class="detail">
+                                          <ion-chip>
+                                            <ion-label *ngIf="q15==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                            <ion-label *ngIf="q15==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                            <ion-label *ngIf="q15==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                            <ion-label *ngIf="q15==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                            <ion-label *ngIf="q15==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                          </ion-chip>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <ion-label>
+                                          <p>16. Able to screw on a cap.
+                                          </p>
+                                        </ion-label>
+                                    
+                                          <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="q16" snaps color="danger">
+                                          </ion-range><br>
+                                  
+                                      
+                                          <div class="detail">
+                                            <ion-chip>
+                                              <ion-label *ngIf="q16==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                              <ion-label *ngIf="q16==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                              <ion-label *ngIf="q16==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                              <ion-label *ngIf="q16==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                              <ion-label *ngIf="q16==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                            </ion-chip>
+                                          </div>
+                                        </div>
+                                    
+    <ion-button mode="ios" fills ="solid" color="tertiary" expand="block" (click)="gys23($event)">Get Your Score</ion-button>                        
+    </div>
+    <div *ngIf="year=='Kid'">
+      <div>
+      <ion-label>
+        <p>1.Able to jump forward and backward successively, with one foot and while running. 
+          </p>
+      </ion-label>
+  
+        <ion-range mode="ios" style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K1" snaps color="danger">
+        </ion-range><br>
+  
+    
+        <div class="detail">
+          <ion-chip>
+          <ion-label *ngIf="K1==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+          <ion-label *ngIf="K1==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+          <ion-label *ngIf="K1==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+          <ion-label *ngIf="K1==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+          <ion-label *ngIf="K1==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+  
+          </ion-chip>
+        </div>
+      </div>
+  
+      <div>
+        <ion-label>
+          <p>2.Able to throw and catch bean bags</p>
+        </ion-label>
+    
+          <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K2" snaps color="danger">
+          </ion-range><br>
+  
+      
+          <div class="detail">
+            <ion-chip>
+              <ion-label *ngIf="K2==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+              <ion-label *ngIf="K2==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+              <ion-label *ngIf="K2==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+              <ion-label *ngIf="K2==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+              <ion-label *ngIf="K2==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+            </ion-chip>
+          </div>
+        </div>
+  
+        <div>
+          <ion-label>
+            <p>3. Walk on a balance beam  </p>
+          </ion-label>
+      
+            <ion-range  mode="ios" style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K3" snaps color="danger">
+            </ion-range><br>
+    
+        
+            <div class="detail">
+              <ion-chip>
+                <ion-label *ngIf="K3==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                <ion-label *ngIf="K3==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                <ion-label *ngIf="K3==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                <ion-label *ngIf="K3==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                <ion-label *ngIf="K3==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+              </ion-chip>
+            </div>
+          </div>
+          <div>
+            <ion-label>
+              <p>4. Able to throw balls. </p>
+            </ion-label>
+        
+              <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K4" snaps color="danger">
+              </ion-range><br>
+      
+          
+              <div class="detail">
+                <ion-chip>
+                  <ion-label *ngIf="K4==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                  <ion-label *ngIf="K4==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                  <ion-label *ngIf="K4==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                  <ion-label *ngIf="K4==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                  <ion-label *ngIf="K4==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                </ion-chip>
+              </div>
+            </div>
+            <div>
+              <ion-label>
+                <p>5.Able to pick up objects on the ground while running
+                </p>
+              </ion-label>
+          
+                <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K5" snaps color="danger">
+                </ion-range><br>
+        
+            
+                <div class="detail">
+                  <ion-chip>
+                    <ion-label *ngIf="K5==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                    <ion-label *ngIf="K5==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                    <ion-label *ngIf="K5==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                    <ion-label *ngIf="K5==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                    <ion-label *ngIf="K5==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                  </ion-chip>
+                </div>
+              </div>
+              <div>
+                <ion-label>
+                  <p>6. When swimming, able to walk on shallow water or float on floater.
+                  </p>
+                </ion-label>
+            
+                  <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K6" snaps color="danger">
+                  </ion-range><br>
+          
+              
+                  <div class="detail">
+                    <ion-chip>
+                      <ion-label *ngIf="K6==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                      <ion-label *ngIf="K6==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                      <ion-label *ngIf="K6==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                      <ion-label *ngIf="K6==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                      <ion-label *ngIf="K6==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                    </ion-chip>
+                  </div>
+                </div>
+                <div>
+                  <ion-label>
+                    <p>7. Play confidently with slides, climbing frames and swings. 
+                    </p>
+                  </ion-label>
+              
+                    <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K7" snaps color="danger">
+                    </ion-range><br>
+            
+                
+                    <div class="detail">
+                      <ion-chip>
+                        <ion-label *ngIf="K7==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                        <ion-label *ngIf="K7==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                        <ion-label *ngIf="K7==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                        <ion-label *ngIf="K7==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                        <ion-label *ngIf="K7==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                      </ion-chip>
+                    </div>
+                  </div>
+   
+                  
+                  <div>
+                    <ion-label>
+                      <p>8. Begin to do simple paper cutting and pasting.
+                      </p>
+                    </ion-label>
+                
+                      <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K8" snaps color="danger">
+                      </ion-range><br>
+              
+                  
+                      <div class="detail">
+                        <ion-chip>
+                          <ion-label *ngIf="K8==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                          <ion-label *ngIf="K8==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                          <ion-label *ngIf="K8==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                          <ion-label *ngIf="K8==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                          <ion-label *ngIf="K8==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                        </ion-chip>
+                      </div>
+                    </div>
+                    <div>
+                      <ion-label>
+                        <p>9. Able to cut simple pattern. 
+                        </p>
+                      </ion-label>
+                  
+                        <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K9" snaps color="danger">
+                        </ion-range><br>
+                
+                    
+                        <div class="detail">
+                          <ion-chip>
+                            <ion-label *ngIf="K9==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                            <ion-label *ngIf="K9==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                            <ion-label *ngIf="K9==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                            <ion-label *ngIf="K9==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                            <ion-label *ngIf="K9==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                          </ion-chip>
+                        </div>
+                      </div>
+                 
+                        <div>
+                          <ion-label>
+                            <p>10. Able to thread beads
+                            </p>
+                          </ion-label>
+                      
+                            <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K10" snaps color="danger">
+                            </ion-range><br>
+                    
+                        
+                            <div class="detail">
+                              <ion-chip>
+                                <ion-label *ngIf="K10==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                <ion-label *ngIf="K10==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                <ion-label *ngIf="K10==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                <ion-label *ngIf="K10==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                <ion-label *ngIf="K10==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                              </ion-chip>
+                            </div>
+                          </div>
+                          <div>
+                            <ion-label>
+                              <p>11.Able to construct a small tower with six pieces of toy bricks by imitation.
+                            </ion-label>
+                        
+                              <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K11" snaps color="danger">
+                              </ion-range><br>
+                      
+                          
+                              <div class="detail">
+                                <ion-chip>
+                                  <ion-label *ngIf="K11==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                  <ion-label *ngIf="K11==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                  <ion-label *ngIf="K11==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                  <ion-label *ngIf="K11==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                  <ion-label *ngIf="K11==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                </ion-chip>
+                              </div>
+                            </div>
+                            <div>
+                              <ion-label>
+                                <p>12. Able to draw simple pictures such as people, houses, trees, vehicles, etc. 
+                                </p>
+                              </ion-label>
+                          
+                                <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K12" snaps color="danger">
+                                </ion-range><br>
+                        
+                            
+                                <div class="detail">
+                                  <ion-chip>
+                                    <ion-label *ngIf="K12==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                    <ion-label *ngIf="K12==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                    <ion-label *ngIf="K12==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                    <ion-label *ngIf="K12==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                    <ion-label *ngIf="K12==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                  </ion-chip>
+                                </div>
+                              </div>
+                              <div>
+                                <ion-label>
+                                  <p>13. Able to fold a piece of paper along an inclined line.  
+                                  </p>
+                                </ion-label>
+                            
+                                  <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K13" snaps color="danger">
+                                  </ion-range><br>
+                          
+                              
+                                  <div class="detail">
+                                    <ion-chip>
+                                      <ion-label *ngIf="K13==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                      <ion-label *ngIf="K13==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                      <ion-label *ngIf="K13==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                      <ion-label *ngIf="K13==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                      <ion-label *ngIf="K13==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                    </ion-chip>
+                                  </div>
+                                </div>
+                                <div>
+                                  <ion-label>
+                                    <p>14. Able to stick several pieces of plasticine together. 
+                                    </p>
+                                  </ion-label>
+                              
+                                    <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K14" snaps color="danger">
+                                    </ion-range><br>
+                            
+                                
+                                    <div class="detail">
+                                      <ion-chip>
+                                        <ion-label *ngIf="K14==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                        <ion-label *ngIf="K14==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                        <ion-label *ngIf="K14==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                        <ion-label *ngIf="K14==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                        <ion-label *ngIf="K14==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                      </ion-chip>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <ion-label>
+                                      <p>15. Able to draw quadrilaterals.
+                                      </p>
+                                    </ion-label>
+                                
+                                      <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="K15" snaps color="danger">
+                                      </ion-range><br>
+                              
+                                  
+                                      <div class="detail">
+                                        <ion-chip>
+                                          <ion-label *ngIf="K15==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                          <ion-label *ngIf="K15==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                          <ion-label *ngIf="K15==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                          <ion-label *ngIf="K15==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                          <ion-label *ngIf="K15==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                        </ion-chip>
+                                      </div>
+                                    </div>
+                                    
+                                  
+  <ion-button mode="ios" fills ="solid" color="tertiary" expand="block" (click)="gys45($event)">Get Your Score</ion-button>                        
+  </div>
+  
+  <div *ngIf="year=='elderKid'">
+    <div>
+    <ion-label>
+      <p>1. Able to hold a ball while running, kick a moving ball or play ball with a racket. </p>
+    </ion-label>
+  
+      <ion-range mode="ios" style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e1" snaps color="danger">
+      </ion-range><br>
+  
+  
+      <div class="detail">
+        <ion-chip>
+        <ion-label *ngIf="e1==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+        <ion-label *ngIf="e1==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+        <ion-label *ngIf="e1==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+        <ion-label *ngIf="e1==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+        <ion-label *ngIf="e1==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+  
+        </ion-chip>
+      </div>
+    </div>
+  
+    <div>
+      <ion-label>
+        <p> 2. Able to play on their own on a swing.  </p>
+      </ion-label>
+  
+        <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e2" snaps color="danger">
+        </ion-range><br>
+  
+    
+        <div class="detail">
+          <ion-chip>
+            <ion-label *ngIf="e2==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+            <ion-label *ngIf="e2==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+            <ion-label *ngIf="e2==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+            <ion-label *ngIf="e2==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+            <ion-label *ngIf="e2==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+          </ion-chip>
+        </div>
+      </div>
+  
+      <div>
+        <ion-label>
+          <p>3. Able to climb a string-ladder. </p>
+        </ion-label>
+    
+          <ion-range  mode="ios" style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e3" snaps color="danger">
+          </ion-range><br>
+  
+      
+          <div class="detail">
+            <ion-chip>
+              <ion-label *ngIf="e3==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+              <ion-label *ngIf="e3==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+              <ion-label *ngIf="e3==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+              <ion-label *ngIf="e3==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+              <ion-label *ngIf="e3==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+            </ion-chip>
+          </div>
+        </div>
+        <div>
+          <ion-label>
+            <p>4. Able to run well by their toes swiftly and take quick bends.  </p>
+          </ion-label>
+      
+            <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e4" snaps color="danger">
+            </ion-range><br>
+    
+        
+            <div class="detail">
+              <ion-chip>
+                <ion-label *ngIf="e4==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                <ion-label *ngIf="e4==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                <ion-label *ngIf="e4==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                <ion-label *ngIf="e4==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                <ion-label *ngIf="e4==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+              </ion-chip>
+            </div>
+          </div>
+          <div>
+            <ion-label>
+              <p>5. Able to walk up and down stairs alone with alternate foot. 
+              </p>
+            </ion-label>
+        
+              <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e5" snaps color="danger">
+              </ion-range><br>
+      
+          
+              <div class="detail">
+                <ion-chip>
+                  <ion-label *ngIf="e5==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                  <ion-label *ngIf="e5==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                  <ion-label *ngIf="e5==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                  <ion-label *ngIf="e5==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                  <ion-label *ngIf="e5==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                </ion-chip>
+              </div>
+            </div>
+            <div>
+              <ion-label>
+                <p>6. Able to fast run a distance of fifty feet, without feeling tired.
+                </p>
+              </ion-label>
+          
+                <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e6" snaps color="danger">
+                </ion-range><br>
+        
+            
+                <div class="detail">
+                  <ion-chip>
+                    <ion-label *ngIf="e6==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                    <ion-label *ngIf="e6==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                    <ion-label *ngIf="e6==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                    <ion-label *ngIf="e6==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                    <ion-label *ngIf="e6==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                  </ion-chip>
+                </div>
+              </div>
+              <div>
+                <ion-label>
+                  <p> 7. Able to nail with a hammer. 
+                  </p>
+                </ion-label>
+            
+                  <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e7" snaps color="danger">
+                  </ion-range><br>
+          
+              
+                  <div class="detail">
+                    <ion-chip>
+                      <ion-label *ngIf="e7==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                      <ion-label *ngIf="e7==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                      <ion-label *ngIf="e7==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                      <ion-label *ngIf="e7==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                      <ion-label *ngIf="e7==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                    </ion-chip>
+                  </div>
+                </div>
+  
+                
+                <div>
+                  <ion-label>
+                    <p>8. Able to hold objects weighing over ten pounds. 
+                    </p>
+                  </ion-label>
+              
+                    <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e8" snaps color="danger">
+                    </ion-range><br>
+            
+                
+                    <div class="detail">
+                      <ion-chip>
+                        <ion-label *ngIf="e8==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                        <ion-label *ngIf="e8==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                        <ion-label *ngIf="e8==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                        <ion-label *ngIf="e8==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                        <ion-label *ngIf="e8==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                      </ion-chip>
+                    </div>
+                  </div>
+                  <div>
+                    <ion-label>
+                      <p>9. Able to fill colour in an assigned area when paying attention. 
+                      </p>
+                    </ion-label>
+                
+                      <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e9" snaps color="danger">
+                      </ion-range><br>
+              
+                  
+                      <div class="detail">
+                        <ion-chip>
+                          <ion-label *ngIf="e9==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                          <ion-label *ngIf="e9==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                          <ion-label *ngIf="e9==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                          <ion-label *ngIf="e9==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                          <ion-label *ngIf="e9==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                        </ion-chip>
+                      </div>
+                    </div>
+               
+                      <div>
+                        <ion-label>
+                          <p>10. Able to sharpen pencils with a sharpener.
+                          </p>
+                        </ion-label>
+                    
+                          <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e10" snaps color="danger">
+                          </ion-range><br>
+                  
+                      
+                          <div class="detail">
+                            <ion-chip>
+                              <ion-label *ngIf="e10==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                              <ion-label *ngIf="e10==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                              <ion-label *ngIf="e10==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                              <ion-label *ngIf="e10==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                              <ion-label *ngIf="e10==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                            </ion-chip>
+                          </div>
+                        </div>
+                        <div>
+                          <ion-label>
+                            <p>11.Able to draw straight lines with a ruler.
+                          </ion-label>
+                      
+                            <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e11" snaps color="danger">
+                            </ion-range><br>
+                    
+                        
+                            <div class="detail">
+                              <ion-chip>
+                                <ion-label *ngIf="e11==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                <ion-label *ngIf="e11==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                <ion-label *ngIf="e11==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                <ion-label *ngIf="e11==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                <ion-label *ngIf="e11==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                              </ion-chip>
+                            </div>
+                          </div>
+                          <div>
+                            <ion-label>
+                              <p>12. Able to erase with an eraser without tearing the paper.
+                              </p>
+                            </ion-label>
+                        
+                              <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e12" snaps color="danger">
+                              </ion-range><br>
+                      
+                          
+                              <div class="detail">
+                                <ion-chip>
+                                  <ion-label *ngIf="e12==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                  <ion-label *ngIf="e12==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                  <ion-label *ngIf="e12==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                  <ion-label *ngIf="e12==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                  <ion-label *ngIf="e12==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                </ion-chip>
+                              </div>
+                            </div>
+                            <div>
+                              <ion-label>
+                                <p>13. Able to cut out a pattern from a book. 
+                                </p>
+                              </ion-label>
+                          
+                                <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e13" snaps color="danger">
+                                </ion-range><br>
+                        
+                            
+                                <div class="detail">
+                                  <ion-chip>
+                                    <ion-label *ngIf="e13==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                    <ion-label *ngIf="e13==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                    <ion-label *ngIf="e13==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                    <ion-label *ngIf="e13==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                    <ion-label *ngIf="e13==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                  </ion-chip>
+                                </div>
+                              </div>
+                              <div>
+                                <ion-label>
+                                  <p>14. Able to fold a piece of paper into half and then further half. 
+                                  </p>
+                                </ion-label>
+                            
+                                  <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e14" snaps color="danger">
+                                  </ion-range><br>
+                          
+                              
+                                  <div class="detail">
+                                    <ion-chip>
+                                      <ion-label *ngIf="e14==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                      <ion-label *ngIf="e14==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                      <ion-label *ngIf="e14==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                      <ion-label *ngIf="e14==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                      <ion-label *ngIf="e14==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                    </ion-chip>
+                                  </div>
+                                </div>
+                                <div>
+                                  <ion-label>
+                                    <p>15. Able to put small beans into a bottle.
+                                    </p>
+                                  </ion-label>
+                              
+                                    <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e15" snaps color="danger">
+                                    </ion-range><br>
+                            
+                                
+                                    <div class="detail">
+                                      <ion-chip>
+                                        <ion-label *ngIf="e15==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                        <ion-label *ngIf="e15==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                        <ion-label *ngIf="e15==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                        <ion-label *ngIf="e15==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                        <ion-label *ngIf="e15==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                      </ion-chip>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <ion-label>
+                                      <p>16. Able to thread shoelaces. 
+                                      </p>
+                                    </ion-label>
+                                
+                                      <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e16" snaps color="danger">
+                                      </ion-range><br>
+                              
+                                  
+                                      <div class="detail">
+                                        <ion-chip>
+                                          <ion-label *ngIf="e16==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                          <ion-label *ngIf="e16==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                          <ion-label *ngIf="e16==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                          <ion-label *ngIf="e16==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                          <ion-label *ngIf="e16==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                        </ion-chip>
+                                      </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <ion-label>
+                                          <p>17. Able to follow instructions to construct a three-step stair with big square toy bricks.
+                                          </p>
+                                        </ion-label>
+                                    
+                                          <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e17" snaps color="danger">
+                                          </ion-range><br>
+                                  
+                                      
+                                          <div class="detail">
+                                            <ion-chip>
+                                              <ion-label *ngIf="e17==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                              <ion-label *ngIf="e17==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                              <ion-label *ngIf="e17==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                              <ion-label *ngIf="e17==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                              <ion-label *ngIf="e17==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                            </ion-chip>
+                                          </div>
+                                        </div>
+                                        <div>
+                                            <ion-label>
+                                              <p> 18. Able to construct a stair with ten pieces of toy bricks by imitation.
+                                              </p>
+                                            </ion-label>
+                                        
+                                              <ion-range  mode="ios"  style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="e18" snaps color="danger">
+                                              </ion-range><br>
+                                      
+                                          
+                                              <div class="detail">
+                                                <ion-chip>
+                                                  <ion-label *ngIf="e18==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+                                                  <ion-label *ngIf="e18==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+                                                  <ion-label *ngIf="e18==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+                                                  <ion-label *ngIf="e18==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+                                                  <ion-label *ngIf="e18==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+                                                </ion-chip>
+                                              </div>
+                                            </div>
+                                
+  <ion-button mode="ios" fills ="solid" color="tertiary" expand="block" (click)="gys56($event)">Get Your Score</ion-button>                        
+  </div>
+  
+    </div>
+
+    
+    
+  
+    
+    
+    </ion-content>

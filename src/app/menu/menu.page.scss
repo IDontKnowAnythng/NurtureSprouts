@@ -1,0 +1,37 @@
+
+.menu-header-bg{
+    height: 180px;
+    width: 350px;
+    background: linear-gradient(to bottom, #FF416C, #FF4B2B);
+    transform: rotate(-15deg);
+    border-radius: 10px 10px 10px 50px;
+    margin-left: -18px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+.header-content{
+    position: absolute;
+    top:30px;
+    left: 15px;
+    display:flex;
+    align-items: center;
+}
+img{
+    width: 80;
+    height: 80px;
+    border-radius: 50%;
+    border:7px #be88ff;
+}
+h2{
+    font-weight: 300;
+    color: #121212;
+}
+
+
+p{
+    font-size: 12px;
+    color: #121212;
+    font-weight: 100;
+    letter-spacing:0.4px;
+
+}

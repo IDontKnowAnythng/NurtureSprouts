@@ -1,0 +1,41 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+  
+    <ion-buttons slot="start" (click)="resetName()">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title mode="ios" >{{this.auth.Name}}</ion-title>
+    <ion-buttons slot="end" color="dark">
+      <ion-button>
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen="true" slot="fixed">
+ 
+  <ion-list no-lines class="msgbubble" *ngFor="let student of student">
+    <div class="innermsg left">
+      {{this.auth.uid.uid}}
+    </div>
+    <div class="innermsg right">
+       hello
+    </div>
+</ion-list>  
+</ion-content>
+<ion-footer>
+<ion-toolbar color="dark">
+    <form>
+
+      <ion-chip style="width: 85%;">
+      <ion-input  style="color:white;"  placeholder="Type here..." type="varchar"><ion-icon color="tertiary" name="pencil-outline" style="padding-left: 5px;"></ion-icon>
+      </ion-input>
+    </ion-chip>
+    <ion-button type="submit" mode="ios" size="small" >
+      <ion-icon name="send" style="padding-bottom:9px"></ion-icon>      
+    </ion-button>
+      </form>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,55 @@
+
+.icon{
+   padding-right: 10pxs;
+}
+.btn{
+  text-align: center;
+}
+
+
+
+ion-item{
+   --background:rgba(0, 0, 255, 0);
+   --color:white;
+   width:280px;
+}
+ion-content.background{
+   --background:linear-gradient(to bottom,#351a74b0, #8d3fe6a8), url(../../assets/question.png) 0 0/100% 100% no-repeat;
+   
+}
+.card-body{
+   background-color: #f1eeeee8;
+   padding: 20px;
+   border-top-left-radius: 40px;
+   border-top-right-radius: 40px;
+   border-bottom-left-radius: 40px;
+   border-bottom-right-radius: 40px;
+   overflow: hidden;
+   font-size: 15px;
+   margin-top: 5px;
+   margin-bottom: 7px;
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+h1{
+   color:rgba(240, 232, 232, 0.767);
+   margin-top: 40px;
+   font-size: 20px;
+   font-weight: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   font-family: 'Questrial', sans-serif;
+
+}
+p{
+   font-size: 14px;
+   color: black;
+
+}
+.detail{
+   margin: 0 auto;
+   text-align: center;
+   padding-bottom: 10px;
+}

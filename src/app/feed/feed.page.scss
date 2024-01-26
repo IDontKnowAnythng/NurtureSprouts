@@ -1,0 +1,170 @@
+ion-card-title{
+    font-size: 22px;
+}
+
+ion-card{
+   width: 250px;
+   position: relative;
+   margin: 20px auto;
+}
+
+ion-content.background{
+   --background:linear-gradient(to bottom,#ffcf7b00, #f8e8c16e), url(../../assets/feedbg.jpg) 0 0/100% 100% no-repeat;
+}
+ion-card{
+   display: flex;
+   flex-direction: column;
+   width: 95% !important;
+   margin-bottom: 80px !important;
+   margin-top: 80px !important;
+
+
+ }
+ .card-body{
+
+
+   overflow: hidden;
+   font-size: 15px;
+   margin-top: 100px;
+   height: 200px;
+   width: 600px;
+   background: linear-gradient(to bottom, #1423A4, #1827b3c0);
+   transform: rotate(-10deg);
+   border-radius: 10px 10px 10px 50px;
+   margin-left: -18px;
+   margin-top: -50px;
+   margin-bottom: 60px;
+ 
+}
+.header-content{
+   position: relative;
+   top:50px;
+   left: 150px;
+   display:flex;
+   align-items: center;
+
+
+   
+}
+.head{
+ text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+h1{
+   font-size: 35px;
+   color: #4E77F7;
+   font-family: 'Questrial', sans-serif;
+}
+
+
+h2{
+   color: #e0e0e0;
+   font-size: 20px;
+   font-family: 'Questrial', sans-serif;
+   margin: auto;
+
+}
+h3{
+   color: #f7e0e1;
+   font-size: 25px;
+   margin-top: 80px;
+   font-family:  'pacifico', cursive;
+
+}
+
+.card{
+   ion-card{
+      width:80% !important;
+   }
+}
+#bodyHobbies {
+   width: 100%;
+   height: 200px;
+   display: inline-table;
+ }
+ 
+ .intbox {
+   width: 50%;
+   height: 50%;
+   display: inline-block;
+   margin: 0px;
+
+ }
+ .intbox h2{
+   color:white;
+
+ }
+ .intbox img {
+   width: 100%;
+   height: 104px;
+   border: 0px;
+ }
+ 
+ .intbox1 {
+   margin:auto;
+   text-align:center;
+   color:white;
+   background:linear-gradient(to bottom,#ff416dde, #ff4b2bd2), url(https://hopeforthesold.com/wp-content/uploads/2017/12/superman-1024x562.png) 0 0/100% 100% no-repeat;
+ }
+ 
+ .intbox2 {
+   margin:auto;
+   text-align:center;
+   color:#FFFFFF;
+   background:linear-gradient(to bottom,#090979da, #00d5ffda), url(https://babyishcare.com/wp-content/uploads/2017/09/Cool-Gift-Ideas-for-7-year-old-boys.jpg) 0 0/100% 100% no-repeat;
+
+ }
+ 
+ .intbox3 {
+   margin:auto;
+   text-align:center;
+   color:#FFFFFF;
+   background:linear-gradient(to bottom, #0492c5d5, #18b870d3), url(https://www.cdc.gov/ncbddd/childdevelopment/images/youngteens.jpg) 0 0/100% 100% no-repeat;
+
+ }
+ 
+ .intbox4 {
+   margin:auto;
+   text-align:center;
+   color:#FFFFFF;
+   background:linear-gradient(to bottom,#ff416ddc, #f52e5dd0), url(https://www.quotemaster.org/images/69/699535ce0c41fa38483b3da642791dfb.jpg) 0 0/100% 100% no-repeat;
+
+ }
+ ion-chip{
+    color: white;
+  
+ }     
+.freeTest{
+   width: 100%;
+   margin-bottom: 10px;
+   --background:linear-gradient(to bottom,#ffffff98, #ffffff98), url() 0 0/100% 100% no-repeat;
+
+   ion-card{
+      width: 45% !important;
+      height: 144px !important;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 10px !important;
+      margin-top: 10px !important;
+      img{
+         padding-top: 10px;
+      }
+      .button{
+         border-radius: 50%;
+         width: 35px;
+         height: 35px;
+         color: white;
+         margin: auto;
+         p{
+            margin: 0px;
+            position: relative;
+            top: 8px;
+            left: 8px;
+         }
+      }
+
+   }
+   
+ 
+}

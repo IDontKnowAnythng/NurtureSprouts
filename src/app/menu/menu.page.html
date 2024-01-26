@@ -1,0 +1,27 @@
+<ion-menu contentId="content" color="dark">
+<ion-content padding class="background" color="medium">
+  
+    <div class="menu-header-bg">
+
+    </div>
+    <div class="header-content">
+      <img src="../../assets/user.png" alt="">
+      <ion-label>
+        <h2>
+          bugbee
+          <p>bugbee78</p>
+        </h2>
+      </ion-label>
+    </div>
+    
+    <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+    
+      <ion-item color="medium" line="none" [routerLink]="p.url" routerDirection="root" [class.active-item]="selectedPath == p.url">
+        {{p.title}}
+      </ion-item>
+    
+    </ion-menu-toggle>
+
+</ion-content>
+</ion-menu>
+<ion-router-outlet id="content" main></ion-router-outlet>

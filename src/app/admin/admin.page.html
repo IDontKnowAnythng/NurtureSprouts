@@ -1,0 +1,75 @@
+<ion-content padding class="background">
+  
+  
+
+ 
+  <h1><ion-buttons slot="start">
+    <ion-back-button defaultHref="home" style="margin-left: 0px;"></ion-back-button>
+    {{this.auth.showQuestionnaire}} Development  Qestionnaire
+  </ion-buttons></h1>
+  
+
+
+
+<div class="card-body">
+  <p style="margin-bottom: 8px;">Select age</p>
+    <h3 style="margin-bottom: 15px;margin-top: 0px;">
+      <ion-select [(ngModel)]="id" mode="ios" style="width: 142px;padding: 1px 1px 0px 0px;">
+        <div *ngIf="this.auth.showQuestionnaire=='Cognitive'">
+          <ion-select-option value="1">2-3 years</ion-select-option>
+          <ion-select-option value="2">3-4 years</ion-select-option>
+          <ion-select-option value="3">4-5 years</ion-select-option>
+          <ion-select-option value="4">5-6 years</ion-select-option>
+        </div>
+     
+        <div *ngIf="this.auth.showQuestionnaire=='Physical'">
+          <ion-select-option value="5">2-3 years</ion-select-option>
+          <ion-select-option value="8">3-4 years</ion-select-option>
+          <ion-select-option value="6">4-5 years</ion-select-option>
+          <ion-select-option value="7">5-6 years</ion-select-option>
+        </div>
+        <div *ngIf="this.auth.showQuestionnaire=='Language'">
+          <ion-select-option value="8">2-3 years</ion-select-option>
+          <ion-select-option value="9">3-4 years</ion-select-option>
+          <ion-select-option value="10">4-5 years</ion-select-option>
+          <ion-select-option value="11">5-6 years</ion-select-option>
+        </div>
+      
+
+  
+      </ion-select>
+    </h3>
+
+  <div *ngFor="let question of question;let i = index">
+    <div *ngIf="question.id==id">
+      <ion-label>
+        <p>{{question.question}}</p>
+      </ion-label>
+  
+        <ion-range mode="ios" style="padding-bottom:0px;"min="1"max="5" step="1" value="3" [(ngModel)]="question.name" snaps color="danger">
+        </ion-range><br>
+  
+    
+        <div class="detail">
+          <ion-chip>
+          <ion-label *ngIf="question.name==5" style="color:rgb(4, 117, 1);">very easy</ion-label>
+          <ion-label *ngIf="question.name==4" style="color:rgb(49, 161, 5);">easy</ion-label>
+          <ion-label *ngIf="question.name==3" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+          <ion-label *ngIf="question.name==null" style="color:rgb(0, 0, 0);">Nuetral</ion-label>
+          <ion-label *ngIf="question.name==2" style="color:rgb(173, 0, 0);">Difficult</ion-label>
+          <ion-label *ngIf="question.name==1" style="color:rgb(121, 3, 3);">Very Difficult</ion-label>
+  
+          </ion-chip>
+        </div>
+      </div>
+  </div>
+  <ion-button mode="ios" fills ="solid" color="tertiary" expand="block" (click)="gys56($event,'cognitive',id)">Get Your Score</ion-button>                        
+
+</div>
+
+
+
+
+
+
+</ion-content>

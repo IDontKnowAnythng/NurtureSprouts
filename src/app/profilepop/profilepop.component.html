@@ -1,0 +1,15 @@
+<div>
+  <ion-list style="background-color: #0E1025;">
+    <ion-item color="dark" (click)="editProfile()">
+      <ion-icon name="people-outline"></ion-icon>feedback
+    </ion-item>
+    <ion-item *ngIf="suggestion" color="dark">
+      <ion-textarea></ion-textarea>
+      <ion-button type="submit" color="tertiary"><ion-icon name="send-outline"></ion-icon></ion-button>
+    </ion-item>
+    <ion-item color="dark" (click)="logout()">
+      <ion-icon style="color: #ff5031;" name="log-out-outline"></ion-icon> Logout
+    </ion-item>
+  </ion-list>
+
+</div>

@@ -1,0 +1,160 @@
+
+
+<ion-content scrollEvents="true" class="background" >
+ 
+  <div class="header-content">
+    <img   (click)="goto()" style="width: 80px;"src="../../assets/icon/logo.png"/><br>
+  </div>
+  <div class="head">
+   <h3><span style="color: #BF0E5B;">Nurture</span><span style="color: #21174B;"> Sprouts</span> </h3>
+  </div>
+<ion-card class="freeTest">
+  <img src="https://aspetraining.com/sites/default/files/inline-images/Assess_1_0.png" style="width: 100px;margin: auto;padding-top: 10px;"alt="">
+<ion-card-header style="margin: auto;">
+  <ion-card-subtitle style="margin-top: 6px;">Check-out Our Free Assessments</ion-card-subtitle>
+
+</ion-card-header>
+
+  <div> 
+    <ion-card style="float: left;background-color: #D95436;color: white;" (click)="showDes('Sleep')">
+      <img  style="width: 75px;margin: auto;" src="https://konmari.com/wp-content/uploads/2018/11/AllThingsKonMarid_AriannaHuffington_SleepingMask-1.png" alt="">
+      <h2>Sleep</h2>
+      <div class="button" style="background-color: #b33d23a1; border:5px #ac3e26;">
+        <p>Go</p>
+      </div>
+    </ion-card>
+
+    <ion-card style="float: right;background-color: #B73654;color: white;" (click)="showDes('Eat')">
+      <img  style="width: 75px;margin: auto;" src="https://www.thebostoncalendar.com/system/events/photos/000/299/354/original/Illo_EatingDisorders-5a5facda0d327a00398d98fc.png?1570637395" alt="">
+      <h2>Eat</h2>
+
+      <div class="button" style="background-color: #94223da8;  border: #962942 ;">
+        <p>Go</p>
+      </div>
+    </ion-card>
+    <ion-card style="float: right;background-color: #A4205F;color: white;" (click)="showDes('Behaviour')">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c939cc0b10f25285d557fcf/1574189072486-B9NQ9VGEP4YZPFRWFL51/ke17ZwdGBToddI8pDm48kGDpvalPb1SqHoCn1hwN0Y57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmx-YtV7KdJhhcFMxgH7DNwVWsr4BytTuzU0mdZNjZkC7ehjA8nxqmKGxR1QtMJl5J/behaviour+thinking+principle-make+it+revelant.png"
+      style="width: 75px;margin: auto;" alt="">
+      <h2>Behaviour</h2>
+      <div class="button" style="background-color: #7514439c;border: #6e1540 ;padding-bottom: 10px;">
+        <p>Go</p>
+      </div>   
+    </ion-card>
+    <ion-card style="float: left;background-color: #C5424A;color: white;" (click)="showDes('Mindfulness')">
+      <img  src="../../assets/mindfulness.png" style="width: 75px;margin: auto;"alt="">
+      <h2>Mindfulness</h2>
+      <div class="button" style="background-color: #8b242a9d;border: #8d262d ;padding-bottom: 10px;">
+        <p>Go</p>
+      </div>  
+    </ion-card>
+  </div>
+
+</ion-card>
+  <ion-card class="card">
+  <ion-title style="padding: 20px;">Select Age</ion-title>
+    
+    <div id="bodyHobbies">
+      <div class="intbox intbox1" (click)="selectAge('preschooler')">
+        <ion-chip>3-6
+          <ion-icon *ngIf="selectage=='preschooler'" color="light" name="checkmark-outline"></ion-icon>
+
+        </ion-chip>
+      </div>
+      <div class="intbox intbox2" (click)="selectAge('kid')">
+        <ion-chip>7-10
+          <ion-icon *ngIf="selectage=='kid'" color="light" name="checkmark-outline"></ion-icon>
+
+        </ion-chip>
+   
+
+      </div>
+      <div class="intbox intbox3" (click)="selectAge('teen')">
+        <ion-chip>11-14
+          <ion-icon *ngIf="selectage=='teen'" color="light" name="checkmark-outline"></ion-icon>
+
+        </ion-chip>
+
+      </div>
+      <div class="intbox intbox4" (click)="selectAge('underAdult')">
+        <ion-chip>15-18
+          <ion-icon *ngIf="selectage=='underAdult'" color="light"name="checkmark-outline"></ion-icon>
+
+        </ion-chip>
+
+      </div>
+  </div>
+
+
+
+    <ion-item>
+      <ion-icon name="ribbon-outline" slot="start"></ion-icon>
+      <ion-card-subtitle style="margin-top: 6px;">physical Development Qestionnaire</ion-card-subtitle>
+
+      <ion-button [disabled]="selectage==null"fill="outline" slot="end" color="medium" (click)="touploadnews()">Go</ion-button>
+    </ion-item>
+  
+   
+  </ion-card>
+
+ 
+  <ion-card>
+    <img src="https://getonlinetherapy.co.uk/static/images/video_call_illustration.svg" />
+    <ion-card-header>
+      <ion-card-subtitle>Psychological Councelling</ion-card-subtitle>
+      <ion-card-title>we provide Psychological Counselling</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Helps people with physical, emotional and mental
+      health issues improve their sense of well‐being,
+      alleviate feelings of distress and resolve crises.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img style="padding-top: 20px;"src="../../assets/parentalCounselling.png"/>
+    <ion-card-header>
+      <ion-card-subtitle>Parental Councelling</ion-card-subtitle>
+      <ion-card-title>we provide Parental Counselling</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      aims to provide the necessary knowledge, tools,
+      guidance, and most especially support to parents
+      without bias or judgment. This way, they become
+      more fully equipped to take care of their children.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img style="margin-right: 15px;"src="../../assets/careercounselling.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle>Career Councelling</ion-card-subtitle>
+      <ion-card-title>we provide Career Counselling</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      helps students choose the right course and career
+      path for themselves
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img style="margin:15px;"src="../../assets/teacherTraining.png"/>
+    <ion-card-header>
+      <ion-card-subtitle>Teacher Training</ion-card-subtitle>
+      <ion-card-title>we train Teachers for better performance</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      the process of teaching the knowledge, skills, and
+      attitudes you need to be a teacher in an educational
+      setting
+    </ion-card-content>
+  </ion-card>
+
+
+
+  
+
+  
+</ion-content>

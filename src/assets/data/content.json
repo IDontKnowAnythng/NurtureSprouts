@@ -1,0 +1,115 @@
+[
+    {
+        "id":1,"heading":"","content":"Cognitive development means how children think, explore and figure things out. It is the development of knowledge, skills, problem solving and dispositions, which help children to think about and understand the world around them. Brain development is part of cognitive development.","category":"def"
+    },
+    {
+        "id":1,"heading":"Cognitive Development Importance ","content":"Preschoolers, ages three to six, should be at the 'preoperational' stage of Piaget's cognitive development theory, meaning they are using their imagery and memory skills. They should be conditioned to learning and memorizing, and their view of the world is normally very self-centered. Preschoolers usually have also developed their social interaction skills, such as playing and cooperating with other children their own age. It is normal for preschoolers to test the limits of their cognitive abilities, and they learn negative concepts and actions, such as talking back to adults, lying , and bullying. Other cognitive development in preschoolers are developing an increased attention span, learning to read, and developing structured routines, such as doing household chores","category":"importance"
+    },
+    {
+        "id":1,"heading":"Fixation because of cognitive development ","content":"Cognitive impairment is the general loss or lack of development of cognitive abilities, particularly autism and learning disabilities. The National Institutes of Mental Health (NIMH) describes learning disabilities as a disorder that affects people's ability to either interpret what they see and hear or to link information from different parts of the brain. These limitations can show up in many ways, such as specific difficulties with spoken and written language, coordination, self-control, or attention. Such difficulties extend to schoolwork and can impede learning to read or write or to do math. A child who has a learning disability may have other conditions, such as hearing problems or serious emotional disturbance. However, learning disabilities are not caused by these conditions, nor are they caused by environmental influences such as cultural differences or inappropriate instruction.","category":"fixation"
+    },   
+    {
+        "id":1,"heading":"Dyscalculia","content":"Dyscalculia is associated with weaknesses in fundamental number representation and processing, which results in difficulties with quantifying sets without counting, using nonverbal processes to complete simple numerical operations, and estimating relative magnitudes of sets.","content1":"Because these math skills are necessary for higher-level math problem solving, quantitative reasoning is likely impaired for these individuals.","category":"Dyscalculia"
+    },
+    {
+        "id":1,"heading":"ADHD","heading1":"Affects focus, attention and behavior and can make learning challenging",
+        "content":"ADHD is not considered to be a learning disability. It can be determined to be a disability under the Individuals with Disabilities Education Act (IDEA), making a student eligible to receive special education services. However, ADHD falls under the category “Other Health Impaired” and not under “Specific Learning Disabilities.”",
+        "content1":"Many children with ADHD ¬ approximately 20 to 30 percent ¬ also have a specific learning disability",
+        "content2":"The principle characteristics of ADHD are inattention, hyperactivity, and impulsivity. There are three subtypes of ADHD recognized by professionals. These are the predominantly hyperactive/impulsive type (that does not show significant inattention); The predominantly inattentive type (that does not show significant hyperactive-impulsive behavior) sometimes called ADD; and the combined type (that displays both inattentive and hyperactive-impulsive symptoms","category":"ADHD"
+    },   
+    {
+        "id":1,"heading":"Non-Verbal Learning Disabilities","heading1":"Has trouble interpreting nonverbal cues like facial expressions or body language and may have poor coordination.","content":"Currently non-verbal learning disabilities are not listed in IDEA or the DSM-5 as a specific type of learning disability. There is a developing body of research that indicates approximately 5 percent of individuals with learning disabilities display the cognitive and academic difficulties that are associated with nonverbal learning disabilities.",
+        "content1":"Research indicates that nonverbal learning disabilities are associated with impairment in three broad areas, including motoric skills, visual-spatial organizational memory, and social abilities.",
+        "content2":"Individuals with this type of learning disability have a well-developed vocabulary, as well as strong reading recognition ability and rote language skills.","category":"Non-Verbal"
+    },
+    {
+        "id":2,"heading":"","content":"Language skills are essential to a child’s ability to communicate and develop. These skills enable children to engage with other people and learn from their surroundings and in the classroom.","category":"def"
+    },   
+    {
+        "id":2,"heading":"Language is made up of four main areas, which include:","content":"The way sounds are structured and sequenced in speech",
+        "content1":"How vocabulary is used to express concepts",
+        "content2":"This involves syntax, which is the way words are arranged to for m a sentence, as well as morphology, which is the use of grammar to express tense or the active voice, for example.",
+        "content3":"The skills used to communicate effectively such as waiting your turn to speak, adapting language based on the person you are speaking to and how to ask for something or greet someone.",
+        "category":"types"
+    },
+    {
+        "id":2,"heading":"Importance of Linguistic Development","content":"From birth up to the age of five, children develop language at a very rapid pace. The stages of language development are universal among humans. However, the age and the pace at which a child reaches each milestone of language development vary greatly among children. Thus, language development in an individual child must be compared with norms rather than with other individual children. In general girls develop language at a faster rate than boys. More than any other aspect of development, language development reflects the growth and maturation of the brain. After the age of five it becomes much more difficult for most children to learn language.","category":"importance"
+    },   
+    {
+        "id":2,"heading":"Fixation or issue because of linguistic development ",
+        "heading1":"Problems with movement and coordination, language and speech.",
+        "content":"A disorder that is characterized by difficulty in muscle control, which causes problems with movement and coordination, language and speech, and can affect learning. Although not a learning disability, Dyspraxia often exists along with Dyslexia, Dyscalculia or ADHD.","category":"problem"
+    },
+    {
+        "id":2,"heading":"Signs and Symptoms",
+        "content":"Exhibits poor balance; may appear clumsy; may frequently stumble",
+        "content1":"Shows difficulty with motor planning",
+        "content2":"Demonstrates inability to coordinate both sides of the body",
+        "content3":"Has poor hand-eye coordination",
+        "content4":"Exhibits weakness in the ability to organize self and belongings",
+        "content5":"Shows possible sensitivity to touch",
+        "content6":"May be distressed by loud noises or constant noises like the ticking of a clock or someone tapping a pencil",
+        "content7":"May break things or choose toys that do not require skilled manipulation",
+        "content8":"Has difficulty with fine motor tasks such as coloring between the lines, putting puzzles together; cutting accurately or pasting neatly",
+        "content9":"Irritated by scratchy, rough, tight or heavy clothing",
+        
+        "category":"signs"
+    },
+    {
+        "id":2,"heading":"Strategy",
+        "content":"Pre-set students for touch with verbal prompts, “I’m going to touch your right hand.”",
+        "content1":"Avoid touching from behind or getting too close and make sure peers are aware of this",
+        "content2":"Provide a quiet place, without auditory or visual distractions, for testing, silent reading or work that requires great concentration",
+        "content3":"Warn the student when bells will ring or if a fire drill is scheduled",
+        "content4":"Whisper when working one to one with the child",
+        "content5":"Allow parents to provide earplugs or sterile waxes for noisy events such as assemblies",
+        "content6":"Make sure the parent knows about what is observed about the student in the classroom",
+        "content7":"Refer student for occupational therapy or sensory integration training",
+        "content8":"Be cognizant of light and light sources that may be irritating to child",
+        "content9":"Use manipulatives, but make sure they are in students field of vision and don’t force student to touch them",
+        
+        "category":"Strategy"
+    },
+    {
+        "id":2,"heading":"Oral / Written Language Disorder and Specific Reading Comprehension Deficit","heading1":"Affects an individual’s understanding of what they read or of spoken language.",
+        "content":"Individuals with Oral / Written Language Disorder and Specific Reading Comprehension Deficit struggle with understanding and/or expressing language often in both oral and written forms.",
+        "content1":"These individuals often exhibit Specific Language Impairment related to deficits in semantic processing and syntactic processing.",
+        "content2":"Semantic processing relates to encoding the meaning of words. Syntactic processing relates to the understanding of the order of words and how that can change meaning. For example, the sentences “The blanket is on the baby” and “The baby is on the blanket” use the same words, but have different meanings.",
+        "category":"affects"
+    },
+    {
+        "id":2,"heading":"Developmental language disorder",
+        "content":"Developmental language disorder, or DLD for short, is a hidden but very common condition that means a child has difficulty using and/or understanding language. Children with DLD have language abilities that fall behind those of other children their age, even though they are often just as smart. Having trouble with language means that children with DLD may have difficulty socializing with their classmates, talking about how they feel, and learning in school . DLD is very common. If your class at school was made up of 28 students, there would be about two students in your class with DLD. It is a life-long condition. Even though DLD is usually first discovered and treated in childhood, it usually does not go away as a child grows up. There are many adults with DLD,",
+        "category":"developmentDisorder"
+    },
+    {
+        "id":3,"heading":"",
+        "content":"Children at this age can be very possessive and have difficulty sharing. Learning to get along with other children is an essential skill, however. In just a few short years, your child will go from spending most of their time with family and close friends to spending a large chunk of the day interacting, learning, and playing with other kids at school.",
+        "category":"def"
+
+    },
+    {
+        "id":3,"heading":"",
+        "content":"Emotional development and social skills are essential for school readiness. Examples of such abilities include paying attention to adult figures, transitioning easily from one activity to the next, and cooperating with other kids.",
+        "category":"def1"
+    },
+    {
+        "id":3,"heading":"Importance of Social and emotional development ",
+        "content":"Positive social and emotional development is important. This development influences a child’s self-confidence, empathy, the ability to develop meaningful and lasting friendships and partnerships, and a sense of importance and value to those around him/her. Children’s social and emotional development also influences all other areas of development.",
+        "content1":"Parents and caregivers play the biggest role in social/emotional development because they offer the most consistent relationships for their child. Consistent experiences with family members, teachers and other adults help children learn about relationships and explore emotions in predictable interactions.",
+        "category":"Importance"
+    },
+    {
+        "id":3,"heading":"Problem associated with Social and emotional disorder",
+        "content":"Mental health disorders (MHD) are very common in childhood and they include emotional-obsessive-compulsive disorder (OCD), anxiety, depression, disruptive (oppositional defiance disorder (ODD), conduct disorder (CD), attention deficit hyperactive disorder (ADHD) or developmental (speech/language delay, intellectual disability) disorders or pervasive (autistic spectrum) disorders[1]. Emotional and behavioural problems (EBP) or disorders (EBD) can also be classified as either “internalizing” (emotional disorders such as depression and anxiety) ",
+        "content1":"While low-intensity naughty, defiant and impulsive behaviour from time to time, losing one’s temper, destruction of property, and deceitfulness/stealing in the preschool children are regarded as normal, extremely difficult and challenging behaviours outside the norm for the age and level of development, such as unpredictable, prolonged, and/or destructive tantrums and severe outbursts of temper loss are recognized as behaviour disorders. Community studies have identified that more than 80% of pre-schoolers have mild tantrums sometimes but a smaller proportion, less than 10% will have daily tantrums, regarded as normative misbehaviours at this age[2,3]. Challenging behaviours and emotional difficulties are more likely to be recognized as “problems” rather than “disorders” during the first 2 years of life",
+        "content2":"Aggression is a common, yet complex, challenging behaviour, and a frequent indication for referral to child and adolescent Psychiatrists. It commonly begins in childhood, with more than 58% of preschool children demonstrating some aggressive behaviour[17]. Aggression has been linked to several risk factors, including individual temperaments; the effects of disturbed family dynamics; poor parenting practices; exposure to violence and the influence of attachment disorders.",
+        "category":"Problem"
+    },
+    {
+        "id":3,"heading":"Disruptive behaviour problems",
+        "content":"Disruptive behaviour problems (DBP) include attention deficit hyperactivity disorder (ADHD), oppositional defiant disorder (ODD) and conduct disorder (CD). They constitute the commonest EBPs among CYP. Recent evidence suggests that DBPs should be regarded as a multidimensional phenotype rather than comprising distinct subgroups[20].",
+        "category":"behaviour"
+    }
+   
+]

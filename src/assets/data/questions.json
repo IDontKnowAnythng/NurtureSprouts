@@ -1,0 +1,181 @@
+[
+          
+
+            {"id":1,"name":3, "question":"1. Begin to show memory, like remembering there are sweets in the refrigerator, or looking for their favourite toys"},
+            {"id":1,"name":3, "question":"2. Begin to learn matching by colours, shapes, objects and sizes."},
+            {"id":1,"name":3, "question":"3. With repeated attempts, able to put five rings onto a stick in sequence of their sizes. "},
+            {"id":1,"name":3, "question":"4. Begin to know their own names. "},
+            {"id":1,"name":3, "question":"5. Know about the names and functions of some body parts. "},
+            {"id":1,"name":3, "question":"6. Able to identify daily necessities by their senses. "},
+            {"id":1,"name":3, "question":"7. Perform role play like imitating a doctor/teacher, etc. "},
+            {"id":1,"name":3, "question":"8. Able to assemble puzzles of three to five pieces"},
+            {"id":1,"name":3, "question":"9. Begin to understand the meaning of number one and two"},
+
+
+            {"id":2,"name":3, "question":"1. Able to put five rings onto a stick in sequence of their sizes upon two attempts."},
+            {"id":2,"name":3, "question":"2. Able to match three to four colors and identify their names."},
+            {"id":2,"name":3, "question":"3. Able to distinguish between two objects by their sizes, length, texture, hardness."},
+            {"id":2,"name":3, "question":"4. Begin to understand the concept of sequence, and able to make pattern with toy bricks or beads according to sequence"},
+            {"id":2,"name":3, "question":"5. Begin to know how to classify and match objects like food, clothes, and able to associate objects according to their uses, such as shoes with socks and cups with plates."},    
+            {"id":2,"name":3, "question":"6. Able to recall three numbers just heard. "},   
+            {"id":2,"name":3, "question":"7. Able to find two objects by memory."}, 
+            {"id":2,"name":3, "question":"8. Know their own names, sex and age. "},      
+            {"id":2,"name":3, "question":"9. Able to differentiate male and female."},
+            {"id":2,"name":3, "question":"10. Able to draw a person with head and some body parts."},   
+            {"id":2,"name":3, "question":"11. Able to assemble puzzles of six pieces."}, 
+            {"id":2,"name":3, "question":" 12. Able to recite from one to ten."},      
+            {"id":2,"name":3, "question":" 13. Able to count from one to three or four."},
+
+
+            {"id":3,"name":3, "question":"1. Begin to understand the concept of time, able to tell what they usually do in the morning, afternoon and evening."},
+            {"id":3,"name":3, "question":"2. Begin to understand position and speed, e.g. able to distinguish front and back, fast and slow, middle and the first and the last, etc. "},
+            {"id":3,"name":3, "question":"3. Pay attention to their environment, able to point out the missing part in a picture."},
+            {"id":3,"name":3, "question":"4. Able to point out what is inconsistent in a picture. "},
+            {"id":3,"name":3, "question":"5. Able to identify things and events by sound. "},    
+            {"id":3,"name":3, "question":"6. Able to imitate voices of animals. "},   
+            {"id":3,"name":3, "question":"7. Able to distinguish between living things (e.g. cat, dog, tree) and non-living things (e.g. toy, cup and plate)."}, 
+            {"id":3,"name":3, "question":"8. Able to place furniture in the appropriate room"},      
+            {"id":3,"name":3, "question":"9. Able to point out a different type of object."},
+            {"id":3,"name":3, "question":"10. Able to recall four things in a picture just seen. "},   
+            {"id":3,"name":3, "question":"11. Able to follow order to perform three actions in succession. "}, 
+            {"id":3,"name":3, "question":"12. Able to tell which of the three things just seen are missing."},      
+            {"id":3,"name":3, "question":"13. Able to recite from one to twenty, count from one to ten or follow instructions to show one to five things. "},
+            {"id":3,"name":3, "question":"14. Able to draw a man with head, body, limbs and features of the face. "}, 
+            {"id":3,"name":3, "question":"15. Able to assemble puzzles of eight pieces. "},      
+            {"id":3,"name":3, "question":"16. Able to identify simple and common signs, like road signs and shop plates"},
+
+
+            {"id":4,"name":3, "question":"1. Able to put things of different length, height, width and size in correct order easily. "},
+            {"id":4,"name":3, "question":"2. Able to name different colours and shapes of common objects. "},
+            {"id":4,"name":3, "question":"3. Able to draw a rhombus and a triangle by imitation. "},
+            {"id":4,"name":3, "question":"4. Able to play simple puzzle games. "},
+            {"id":4,"name":3, "question":"5. Able to recall five numbers just seen or heard."},    
+            {"id":4,"name":3, "question":"6. Able to tell the general contents of pictures just seen."},   
+            {"id":4,"name":3, "question":"7. Able to repeat three acts from a story just heard. "}, 
+            {"id":4,"name":3, "question":"8. Able to count from one to twenty, write from one to ten. "},      
+            {"id":4,"name":3, "question":"9. Able to place one to five in terms of quantity in correct sequence. "},
+            {"id":4,"name":3, "question":"10. Able to tell the order and position of an object. (e.g. the first, the second)."},   
+            {"id":4,"name":3, "question":"11. Able to tell immediately the quantity of four or below. "}, 
+            {"id":4,"name":3, "question":"12. Understand the difference between “half of a piece” and “one full piece”. "},      
+            {"id":4,"name":3, "question":"13. Able to show the exact quantity of a given number of ten or below."},
+            {"id":4,"name":3, "question":"14. Able to do simple mathematical addition and subtraction."}, 
+            {"id":4,"name":3, "question":"15. Able to read and understand ten of commonly used words"},
+        
+
+
+            {"id":5,"name":3, "question":"1. Able to go up to the slide and climbing frame. "},
+            {"id":5,"name":3, "question":"2. Able to ride a tricycle."},
+            {"id":5,"name":3, "question":"3. Able to kick a slowly moving ball. "},
+            {"id":5,"name":3, "question":"4. Able to catch a big ball being thrown to them."},
+            {"id":5,"name":3, "question":"5. Able to walk upstairs with alternate foot."},
+            {"id":5,"name":3, "question":"6. Able to walk along a line or on footprints. "},
+            {"id":5,"name":3, "question":"7. Able to cross legs when sitting."},
+            {"id":5,"name":3, "question":"8. Able to hammer wooden blocks. "},
+            {"id":5,"name":3, "question":"9. Use scissors to cut paper strips."},
+            {"id":5,"name":3, "question":"10. Use fingers to glue things."},
+            {"id":5,"name":3, "question":"11. Able to build up a pillar of nine pieces of toy bricks."},
+            {"id":5,"name":3, "question":"12. Use three pieces of wood to make a bridge. "},
+            {"id":5,"name":3, "question":"13. Begin to hold a pencil properly to do drawing."},
+            {"id":5,"name":3, "question":"14. Try to fill colour in a random manner. "},
+            {"id":5,"name":3, "question":"15. Able to draw a cross and inclined line by imitation."},
+            {"id":5,"name":3, "question":"16. Able to screw on a cap."},
+
+
+            {"id":6,"name":3, "question":"1. Able to jump forward and backward successively, with one foot and while running. "},
+            {"id":6,"name":3, "question":"2. Able to throw and catch bean bags."},
+            {"id":6,"name":3, "question":"3. Walk on a balance beam"},
+            {"id":6,"name":3, "question":"4. Able to throw balls. "},
+            {"id":6,"name":3, "question":"5. Able to pick up objects on the ground while running"},
+            {"id":6,"name":3, "question":"6. When swimming, able to walk on shallow water or float on floater."},
+            {"id":6,"name":3, "question":"7. Play confidently with slides, climbing frames and swings. "},
+            {"id":6,"name":3, "question":"8. Begin to do simple paper cutting and pasting."},
+            {"id":6,"name":3, "question":"9. Able to cut simple pattern. "},
+            {"id":6,"name":3, "question":"10. Able to thread beads."},
+            {"id":6,"name":3, "question":"11.Able to construct a small tower with six pieces of toy bricks by imitation. "},
+            {"id":6,"name":3, "question":"12. Able to draw simple pictures such as people, houses, trees, vehicles, etc."},
+            {"id":6,"name":3, "question":"13. Able to fold a piece of paper along an inclined line. "},
+            {"id":6,"name":3, "question":"14. Able to stick several pieces of plasticine together. "},
+            {"id":6,"name":3, "question":"15. Able to draw quadrilaterals."},
+          
+
+            {"id":7,"name":3, "question":"1. Able to hold a ball while running, kick a moving ball or play ball with a racket."},
+            {"id":7,"name":3, "question":"2. Able to play on their own on a swing. "},
+            {"id":7,"name":3, "question":"3. Able to climb a string-ladder."},
+            {"id":7,"name":3, "question":"4. Able to run well by their toes swiftly and take quick bends. "},
+            {"id":7,"name":3, "question":"5. Able to walk up and down stairs alone with alternate foot. "},
+            {"id":7,"name":3, "question":"6. Able to fast run a distance of fifty feet, without feeling tired."},
+            {"id":7,"name":3, "question":"7. Able to nail with a hammer. "},
+            {"id":7,"name":3, "question":"8. Able to hold objects weighing over ten pounds."},
+            {"id":7,"name":3, "question":"9. Able to fill colour in an assigned area when paying attention. "},
+            {"id":7,"name":3, "question":"10. Able to sharpen pencils with a sharpener."},
+            {"id":7,"name":3, "question":"11. Able to draw straight lines with a ruler."},
+            {"id":7,"name":3, "question":"12. Able to erase with an eraser without tearing the paper."},
+            {"id":7,"name":3, "question":"13. Able to cut out a pattern from a book. "},
+            {"id":7,"name":3, "question":"14. Able to fold a piece of paper into half and then further half."},
+            {"id":7,"name":3, "question":"15. Able to put small beans into a bottle."},
+            {"id":7,"name":3, "question":"16. Able to thread shoelaces. "},
+            {"id":7,"name":3, "question":"17. Able to follow instructions to construct a three-step stair with big square toy bricks."},
+            {"id":7,"name":3, "question":"18. Able to construct a stair with ten pieces of toy bricks by imitation."},
+
+
+            {"id":8,"name":3, "question":"1. Able to follow instructions to find an object."},
+            {"id":8,"name":3, "question":"2. Able to name each body part."},
+            {"id":8,"name":3, "question":"3. Able to understand common nouns, verbs and adjectives."},
+            {"id":8,"name":3, "question":"4. Able to express their wishes with limited words and short sentences. "},
+            {"id":8,"name":3, "question":"5. Try singing nursery rhymes by imitation. "},
+            {"id":8,"name":3, "question":"6. Know to ask with “what”."},
+
+            {"id":9,"name":3, "question":"1. Able to understand some rather abstract words like “same/ different”, “open/ close”, “top/ bottom” and “in/ out”."},
+            {"id":9,"name":3, "question":"2. Understand the meaning of “pretending”. "},
+            {"id":9,"name":3, "question":"3. Pay attention when hearing stories, like to ask adults to repeat telling their favourite stories. "},
+            {"id":9,"name":3, "question":"4. Begin to give a chronological account of incidents that happened in the past."},
+            {"id":9,"name":3, "question":"5. Able to describe with appropriate actions and voices"},
+            {"id":9,"name":3, "question":"6. Know how to control the volume and speed when speaking. "},
+            {"id":9,"name":3, "question":"7. Able to use words like “here”, “there”, “you and me”, etc. "},
+            {"id":9,"name":3, "question":"8. Mainly use nouns, verbs and sometimes adjectives in speech. "},
+            {"id":9,"name":3, "question":"9. Begin to ask with “what”, “where” and “who”. "},
+            {"id":9,"name":3, "question":"10. Able to sing nursery rhymes together with actions, though the pronunciation is still not clear, people (including strangers) can understand their words pretty well"},
+            
+            
+            
+            {"id":10,"name":3, "question":"1. Begin to understand the difference between “past” and “present”."},
+            {"id":10,"name":3, "question":"2. Able to speak fairly fluently and clearly. "},
+            {"id":10,"name":3, "question":"3. Begin to express themselves with complex or much longer sentences."},
+            {"id":10,"name":3, "question":"4. Able to talk about experiences in everyday life. "},
+            {"id":10,"name":3, "question":"5. Able to tell stories from pictures."},
+            {"id":10,"name":3, "question":"6. Able to use words like “becausetherefore”, “some”, “several”, “many” appropriately in conversation. "},
+            {"id":10,"name":3, "question":"7. Able to tell the colour of a particular object, like: banana is yellow."},
+            {"id":10,"name":3, "question":"8. Able to talk about people of different occupations and their responsibilities."},
+            {"id":10,"name":3, "question":"9. Like asking for explanations of things they don’t understand. "},
+            {"id":10,"name":3, "question":"10. Begin to ask with “why”, “when”, “how”, etc. "},
+            {"id":10,"name":3, "question":"11. Able to read simple words. "},
+            {"id":10,"name":3, "question":"12. Able to use opposite/ complementary words and sentences."},
+            {"id":10,"name":3, "question":"13. Able to solve simple quizzes like: “I have four legs, a tail, like to eat fish, can catch mouse, who am I?"},
+            {"id":10,"name":3, "question":"14. Able to single out a word of different nature: e.g. “cow, goat, dog, car"},
+            
+
+            {"id":11,"name":3, "question":"1. Grammar and structure of children’s language are more or less the same as adults. "},
+            {"id":11,"name":3, "question":"2. Able to communicate with family members or peers without difficulty. "},
+            {"id":11,"name":3, "question":"3. Able to speak up in turn without digressing from the subject."},
+            {"id":11,"name":3, "question":"4. Able to give a logical account of what has happened recently."},
+            {"id":11,"name":3, "question":"5. Able to use words like “although”, “however”, “but”, though sometimes inappropriately. "},
+            {"id":11,"name":3, "question":"6. Begin to understand the difference of “yesterday”, “today” and “tomorrow” ."},
+            {"id":11,"name":3, "question":"7. Understand words like in/out, far/near, bottom/top, enter/ leave, start/end, etc. "},
+            {"id":11,"name":3, "question":"8. Able to talk back, protest or even scold others when frustrated."},
+            {"id":11,"name":3, "question":"9. Able to express feelings with appropriate words."},
+            {"id":11,"name":3, "question":"10. Able to describe a picture. "},
+            {"id":11,"name":3, "question":"11. Use different adjectives to describe a person or an object. "},
+            {"id":11,"name":3, "question":"12. Able to tell their own date of birth. "},
+            {"id":11,"name":3, "question":"13. Able to briefly describe four seasons. "},
+            {"id":11,"name":3, "question":"14. Begin to understand the concept of calendar and time. "}
+
+
+
+
+        
+        
+        
+]
+
+    
+    

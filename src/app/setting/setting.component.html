@@ -1,0 +1,15 @@
+<ion-content color="medium">
+  <div *ngIf="close">
+  <ion-list style="background-color: #273238;">
+    <ion-item color="medium" (click)="writeNews()">
+      <ion-icon name="pencil-outline"></ion-icon> write news
+    </ion-item>
+    <ion-item color="medium" (click)="adminPanel()">
+      <ion-icon name="people-outline"></ion-icon> admin panel
+    </ion-item>
+    <ion-item color="medium" (click)="logout()">
+      <ion-icon style="color: #ff5031;" name="log-out-outline"></ion-icon> Logout
+    </ion-item>
+  </ion-list>
+</div>
+</ion-content>

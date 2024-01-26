@@ -1,0 +1,108 @@
+ion-content {
+    --background:linear-gradient(to bottom,#03dac500, #03dac55e), url(https://images.pexels.com/photos/1643113/pexels-photo-1643113.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) 0 0/100% 100% no-repeat;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+ion-toolbar {
+    --background: transparent;
+    color:white;
+}
+
+.card {
+    margin: 0 auto;
+
+    .header {
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top:5px;
+            margin: 0 auto;
+            background-color: 5px #d31740;
+
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+                position: absolute;
+                bottom: calc(-1*(40px + 4px));
+            }
+        }
+    }
+}
+.card-body {
+
+    background-color:#e4e3e3a6;
+    padding: 20px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    overflow: hidden;
+    font-size: 15px;
+
+    .user-meta {
+        padding-top: 15px;
+
+        .playername {
+            position: relative;
+            left: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #383535;
+        }
+
+        .country {
+            font-size: 90%;
+            color: #0b2336;
+            margin: 0 auto;
+        }
+    }
+    .ranking{
+        color: rgb(29, 27, 27);
+    }
+    
+}
+.round {
+    --width: 10px;
+    --height: 10px;
+    --border-radius: 50%;
+    --vertical-align: middle;
+    --padding-start: 5px;
+    --padding-end: 5px;
+  }
+
+.container { 
+    background-color: #9973af91; 
+    width: 95%; 
+    height: 20px;
+    border-radius: 15px; 
+} 
+
+.skill { 
+    background-color: #4c67b3; 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 14px; 
+    border-radius: 15px; 
+    height: 20px;
+
+} 
+
+.pd { 
+    width: 80%; 
+} 
+
+.cd { 
+    width: 60%; 
+} 
+.ld { 
+    width: 30%; 
+}
+.sed { 
+    width: 75%; 
+}

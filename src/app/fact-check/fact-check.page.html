@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>fact-check</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-card *ngFor="let verify of verify" color="medium">
+    <div *ngIf="verify">
+    <ion-card-header>
+      <ion-card-subtitle>{{verify.city}}</ion-card-subtitle>
+      <ion-card-title>{{verify.des}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{verify.source}}
+    </ion-card-content>
+    <ion-button color="danger" size="small" (click)="toremove(this.verify.key)"><ion-icon name="trash-outline"></ion-icon></ion-button>
+  </div>
+    </ion-card>
+
+
+
+</ion-content>

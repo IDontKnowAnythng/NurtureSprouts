@@ -1,0 +1,17 @@
+<div>
+  <ion-list style="background-color: #273238;">
+    <ion-item color="medium" (click)="unverifiedNews()">
+      <ion-icon *ngIf="ushow"  name="checkmark-circle-outline"></ion-icon>unverified
+    </ion-item>
+    <ion-item color="medium" (click)="infotainment()">
+      <ion-icon *ngIf="ishow" name="checkmark-circle-outline"></ion-icon> infotainment
+    </ion-item>
+    <ion-item color="medium" (click)="sports()">
+      <ion-icon *ngIf="sshow" name="checkmark-circle-outline"></ion-icon>Sports
+    </ion-item>
+    <ion-item color="medium" (click)="politics()">
+    <ion-icon *ngIf="pshow" name="checkmark-circle-outline"></ion-icon> politics
+    </ion-item>
+ 
+  </ion-list>
+</div>

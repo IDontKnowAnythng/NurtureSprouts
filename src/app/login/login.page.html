@@ -1,0 +1,38 @@
+
+
+<ion-content padding class="background">
+ 
+    <div class="login-header ion-padding" style="border-bottom-right-radius: 80px;border-bottom-left-radius: -80px;">
+      <img class="logo-img" src="../../assets/icon/logo.png"/>
+      <h3 class="name">Nurture Sprouts</h3>
+    </div>
+    
+ 
+  <div class="des">
+  <p>Nourish to Florish</p>
+  </div>
+  <div class="form">
+ <ion-list style="background-color: transparent;">
+  <ion-item style="background-color: transparent;">
+    <ion-label position="floating"> <ion-icon name="mail-outline"></ion-icon> Email </ion-label>
+    <ion-input  style="background-color: transparent;"type="text" color="danger" name="email"[(ngModel)]="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"><ion-icon name="lock-closed-outline"></ion-icon> Password </ion-label>
+    <ion-input type="Password" color="danger" name="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+ </ion-list>
+</div>
+ <ion-button  fill ="solid" color="light" expand="block" (click)="login(username,password)">Login</ion-button>
+ <ion-button fill ="outline" color="light" expand="block" (click)="toregister()">Register</ion-button>
+ <p style="text-align: right; padding-right: 10px;color:rgba(243, 209, 243, 0.644)">forget password?? recover <b color="red">here</b></p>
+ <div *ngIf="showMe">
+  
+
+    <ion-input type="text" required [(ngModel)]="user1.username" name="username" placeholder="username"></ion-input>
+      <ion-input type="password" [(ngModel)]="user1.password" name="password" placeholder="password"></ion-input>
+
+  </div>
+
+</ion-content>
+  

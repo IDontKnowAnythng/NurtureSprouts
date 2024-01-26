@@ -1,0 +1,52 @@
+
+
+.login-header{
+    position: relative;
+    background: varr(--theme-color);
+    border: bottom left radius 50px;
+    border: bottom right radius 50px;;
+    border-radius: 0em;
+  
+}
+
+.item-native::after{
+    background-color: transparent;
+}
+.logo-img{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.name{
+    font-family:  'pacifico', cursive;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.ion-content{
+    --background: #fafafa;
+}
+.des{
+
+    text-align: center;
+    //background: var(--theme1-color);
+    color: white;
+    border-radius: 20px;
+}
+ion-content.background{
+  
+    --background:linear-gradient(to bottom,#12121213, #12121218), url(../../assets/bg.jpg) 0 0/100% 100% no-repeat;
+}
+ion-item{
+    --background:rgba(0, 0, 255, 0);
+    --color:white;
+}
+.form{
+    border: thick black;
+    border-radius: 10px;
+    background-color: transparent;
+}

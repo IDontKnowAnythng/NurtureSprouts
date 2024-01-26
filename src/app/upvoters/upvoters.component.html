@@ -1,0 +1,268 @@
+<ion-content padding class="background">
+
+<h1 class="signUp">Sign Up</h1>
+  <!---students starts here-->
+
+  <div *ngIf="this.auth.student && !this.auth.teacher && !this.auth.parents" class="card-body">
+    <ion-button (click)="dismiss()" color="tertiary" expand="full" shape="round">
+      <p>sign up as Student</p>
+      <ion-icon  style="padding-left: 10px;"name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  <div> 
+  <ion-item>
+    <ion-label position="floating"> Name </ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> Date of birth </ion-label>
+    <ion-datetime  display-timezone="utc" [(ngModel)]="dob"></ion-datetime>
+
+  </ion-item>
+  <ion-item>
+  <ion-label>Gender</ion-label>
+    <ion-select [(ngModel)]="gender" mode="ios">
+      <ion-select-option value="male">Male</ion-select-option>
+      <ion-select-option value="female">Female</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+
+    <ion-item>
+      <ion-label position="floating"> School Name </ion-label>
+      <ion-input type="text" [(ngModel)]="schoolname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mobile </ion-label>
+      <ion-input type="number" [(ngModel)]="phonenumber"></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating"> Email </ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">State </ion-label>
+    <ion-input type="varchar" [(ngModel)]="state"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"> City </ion-label>
+    <ion-input type="varchar" [(ngModel)]="city"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Pincode </ion-label>
+    <ion-input type="number" [(ngModel)]="pincode"></ion-input>
+  </ion-item>
+ 
+    <ion-item>
+    <ion-label position="floating">Password </ion-label>
+    <ion-input type="Password"  [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+ <ion-item>
+  <ion-label position="floating">Confirm Password </ion-label>
+  <ion-input type="Password"  [(ngModel)]="cpassword"></ion-input>
+</ion-item>
+
+ <ion-button fills ="solid" color="dark" expand="block" (click)="register()">Signup</ion-button>
+ <ion-button fill ="outline" color="dark" expand="block" (click)="tologin()">login</ion-button>
+
+</div>
+</div>
+
+
+
+<!---students end here-->
+
+
+<!---teacher starts here-->
+
+<div *ngIf="!this.auth.student && this.auth.teacher && !this.auth.parents" class="card-body">
+  <ion-button (click)="dismiss()" color="tertiary" expand="full" shape="round">
+    <p>sign up as teacher</p>
+    <ion-icon  style="padding-left: 10px;"name="chevron-down-outline"></ion-icon>
+  </ion-button>
+  <ion-item>
+    <ion-label>catrgories</ion-label>
+    <ion-select [(ngModel)]="category" mode="ios">
+      <ion-select-option value="pre-primary">Pre-primary</ion-select-option>
+      <ion-select-option value="primary">Primary</ion-select-option>
+      <ion-select-option value="elementry">Elementry</ion-select-option>
+      <ion-select-option value="secondary">Secondary</ion-select-option>
+      <ion-select-option value="senior secondary">Senior Secondary</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Subject</ion-label>
+    <ion-select [(ngModel)]="subject" mode="ios">
+      <ion-select-option value="English">English</ion-select-option>
+      <ion-select-option value="Science">Science</ion-select-option>
+      <ion-select-option value="Social-study">Social-study</ion-select-option>
+      <ion-select-option value="Maths">Maths</ion-select-option>
+      <ion-select-option value="Eletive">Eletive</ion-select-option>
+      <ion-select-option value="Computer Science">Computer Science</ion-select-option>
+
+
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Name </ion-label>
+    <ion-input type="text" [(ngModel)]="Tname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select [(ngModel)]="Tgender" mode="ios">
+      <ion-select-option value="male">Male</ion-select-option>
+      <ion-select-option value="female">Female</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Work At</ion-label>
+    <ion-select [(ngModel)]="workAt" mode="ios">
+      <ion-select-option value="school">School</ion-select-option>
+      <ion-select-option value="coaching center">Coaching center</ion-select-option>
+      <ion-select-option value="others">Others</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating"> Email </ion-label>
+    <ion-input type="email" [(ngModel)]="Temail"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> mobile </ion-label>
+    <ion-input type="number" [(ngModel)]="Tmobile"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">State </ion-label>
+    <ion-input type="varchar" [(ngModel)]="Tstate"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">City </ion-label>
+    <ion-input type="varchar" [(ngModel)]="tcity"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> Pincode </ion-label>
+    <ion-input type="number" [(ngModel)]="Tpincode"></ion-input>
+  </ion-item>
+ 
+    <ion-item>
+    <ion-label position="floating"> Password </ion-label>
+    <ion-input type="Password"  [(ngModel)]="Tpassword"></ion-input>
+  </ion-item>
+
+ <ion-item>
+  <ion-label position="floating">Confirm Password </ion-label>
+  <ion-input type="Password"  [(ngModel)]="Tcpassword"></ion-input>
+</ion-item>
+
+ <ion-button fills ="solid" color="dark" expand="block" (click)="Tregister()">Signup</ion-button>
+ <ion-button fill ="outline" color="dark" expand="block" (click)="tologin()">login</ion-button>
+
+</div>
+
+
+
+<!---teacher ends here-->
+
+
+<!---parents start here-->
+
+<div *ngIf="!this.auth.student && !this.auth.teacher && this.auth.parents" class="card-body">
+  
+  <ion-button (click)="dismiss()" color="tertiary" expand="full"  shape="round">
+    <p>sign up as parents</p>
+    <ion-icon  style="padding-left: 10px;"name="chevron-down-outline"></ion-icon>
+  </ion-button>
+
+
+  <ion-item>
+    <ion-label position="floating">Name </ion-label>
+    <ion-input type="text" [(ngModel)]="Pname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> Relationship with child </ion-label>
+    <ion-input type="text" [(ngModel)]="relationship"></ion-input>
+   
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">child's name </ion-label>
+    <ion-input type="text" [(ngModel)]="childName"></ion-input>
+   
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">DOB of child </ion-label>
+    <ion-datetime  display-timezone="utc" [(ngModel)]="childDob"></ion-datetime>
+
+  </ion-item>
+  <ion-item>
+    <ion-label>child's gender</ion-label>
+    <ion-select [(ngModel)]="childGender" mode="ios">
+      <ion-select-option value="male">Male</ion-select-option>
+      <ion-select-option value="female ">Female</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> School name </ion-label>
+    <ion-input type="text" [(ngModel)]="childSchoolname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">total number of Children</ion-label>
+    <ion-input type="number" [(ngModel)]="NoOfChildren"></ion-input>
+   
+  </ion-item>
+  <ion-item>
+    <ion-label>Type of Family </ion-label>
+    <ion-select [(ngModel)]="typeofFamily" mode="ios">
+      <ion-select-option value="male">Joint</ion-select-option>
+      <ion-select-option value="female ">Nuetral</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email </ion-label>
+    <ion-input type="email" [(ngModel)]="Pemail"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> mobile </ion-label>
+    <ion-input type="number" [(ngModel)]="Pmobile"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> State </ion-label>
+    <ion-input type="varchar" [(ngModel)]="Pstate"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> City </ion-label>
+    <ion-input type="varchar" [(ngModel)]="Pcity"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Pincode </ion-label>
+    <ion-input type="number" [(ngModel)]="Ppincode"></ion-input>
+  </ion-item>
+  
+ 
+    <ion-item>
+    <ion-label position="floating"> Password </ion-label>
+    <ion-input type="Password"  [(ngModel)]="Ppassword"></ion-input>
+  </ion-item>
+
+ <ion-item>
+  <ion-label position="floating"> Confirm Password </ion-label>
+  <ion-input type="Password"  [(ngModel)]="Pcpassword"></ion-input>
+</ion-item>
+
+ <ion-button fills ="solid" color="dark" expand="block" (click)="Pregister()">Signup</ion-button>
+ <ion-button fill ="outline" color="dark" expand="block" (click)="tologin()">login</ion-button>
+
+</div>
+<!---parents ends here-->
+
+
+</ion-content>
